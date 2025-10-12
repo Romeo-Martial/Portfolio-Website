@@ -19,9 +19,9 @@ This is my personal portfolio website built to showcase my skills, projects, and
 
 ## 🚀 Technologies Used
 
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Custom styling and responsive design
-- **Bootstrap 5.3.7**: UI framework for responsive components
+- **HTML5**: Semantic markup with Open Graph meta tags for SEO
+- **CSS3**: Advanced styling with animations, transitions, aspect-ratio, and object-fit
+- **Bootstrap 5.3.7**: UI framework for responsive components and grid system
 - **Bootstrap Icons**: Icon library for visual elements
 - **JavaScript**: Interactive functionality (via Bootstrap components)
 - **Prettier**: Code formatting and consistency
@@ -64,11 +64,14 @@ Portfolio-Website/
 
 ### Technical Features
 
-- Responsive navigation with mobile hamburger menu
-- Bootstrap grid system for flexible layouts
-- Interactive accordion for CV sections
-- Contact form with proper validation structure
-- Optimized images and performance
+- **SEO Optimized**: Open Graph meta tags for social media sharing
+- **Smooth Navigation**: Scroll-padding and anchor offsets for seamless section navigation
+- **Interactive UI**: Hover animations and smooth transitions on project cards
+- **Professional Styling**: Consistent image sizing with CSS aspect-ratio and object-fit
+- **Responsive Design**: Mobile-first navigation with Bootstrap grid system
+- **Accessibility**: Proper ARIA labels and semantic HTML structure
+- **Performance**: Optimized images and efficient CSS animations
+- **User Experience**: Interactive accordion for CV sections and contact form validation
 
 ## 🛠️ Development Setup
 
@@ -111,7 +114,12 @@ npm run format:check
 
 ### Colors and Styling
 
-The website uses Bootstrap's utility classes with custom CSS variables. Key styling is defined in the `<style>` section of `index.html`.
+The website uses Bootstrap's utility classes enhanced with modern CSS techniques:
+
+- **Smooth Navigation**: `scroll-padding-top` and `scroll-margin-top` for anchor links
+- **Responsive Images**: `aspect-ratio: 16/9` and `object-fit: cover` for consistent project cards
+- **Interactive Animations**: CSS transitions and transforms for hover effects
+- **Professional Polish**: Custom styling defined in the `<style>` section of `index.html`
 
 ### Adding Projects
 
