@@ -1,299 +1,630 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <!-- In <head> -->
-    <title>Roméo TCHAMOU — Junior Frontend (EU • B2B • Remote)</title>
-    <meta name="description" content="Junior Frontend Developer (EU-based) ready to start within 2 weeks. HTML, CSS, JavaScript, Bootstrap, Sass; learning React. B2B remote.">
+    <title>Roméo TCHAMOU — Junior Frontend</title>
+    <meta
+      name="description"
+      content="Junior Frontend Developer HTML, CSS, JavaScript, Bootstrap, Sass; learning React. B2B remote."
+    />
 
     <style>
-        section{
-            padding: 60px 0;
-        }
+      section {
+        padding: 60px 0;
+      }
+      .card img {
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      /* Keep all card images consistent */
+      .card img {
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        background-color: #fff; /* subtle backdrop for dark images */
+      }
+
+      /* Limit text overflow for equal height cards */
+      .card-text.text-muted.small {
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* show up to 4 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      /* Subtle hover effect for polish */
+      .card {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-light bg-primary-subtle text-white fixed-top fs-4 mb-5 ">
-        <div class="container-xxl ps-5 pe-5">
-            <a href="#" class="nav-brand text-decoration-none text-black fw-bold">
-                <span class="lh-1">
-                    Roméo TCHAMOU<br>
-                    <small class="text-muted fw-normal fst-italic">
-                        Junior Front End Web Developer
-                    </small>
-                </span>
-            </a>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-primary-subtle text-white fixed-top fs-4 mb-5"
+    >
+      <div class="container-xxl ps-5 pe-5">
+        <a href="#" class="nav-brand text-decoration-none text-black fw-bold">
+          <span class="lh-1">
+            Roméo TCHAMOU<br />
+            <small class="text-muted fw-normal fst-italic"> Junior Frontend Web Developer </small>
+          </span>
+        </a>
 
-            <!-- Toggle button for mobile nav -->
-             <button class="navbar-toggler" 
-             type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" 
-             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse justify-content-end align-center"
-            id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#cv" class="nav-link">CV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-            </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cv" class="nav-link">CV</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
-   </nav>
+      </div>
+    </nav>
 
     <!-- About Section -->
     <section id="about" class="bg-light">
-        <div class="container-xxl pt-5 ps-5 pe-5 mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="py-3">About Me</h2>
-                    <p class="lead">I’m a <strong>junior web developer</strong> continuously learning and improving my craft. 
-                        My core skills include <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, 
-                        <strong>Bootstrap</strong>, and <strong>Python</strong>. 
-                        I enjoy turning ideas into functional, beautiful websites that work smoothly across devices.</p>
+      <div class="container-xxl pt-5 ps-5 pe-5 mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="py-3">About Me</h2>
+            <p class="lead">
+              I’m a <strong>junior web developer</strong> continuously learning and improving my
+              craft. My core skills include <strong>HTML</strong>, <strong>CSS</strong>,
+              <strong>JavaScript</strong>, <strong>Bootstrap</strong>, and <strong>Python</strong>.
+              I enjoy turning ideas into functional, beautiful websites that work smoothly across
+              devices.
+            </p>
 
-                    <p class="lead">I’m currently taking <strong>The Odin Project</strong>, focusing on the <strong>React</strong> section to strengthen 
-                        my frontend development skills and build more dynamic, component-based applications.</p>
+            <p class="lead">
+              I’m currently taking <strong>The Odin Project</strong>, focusing on the
+              <strong>React</strong> section to strengthen my frontend development skills and build
+              more dynamic, component-based applications.
+            </p>
 
-                    <p class="lead">Coming from a <strong>mathematics</strong> and <strong>engineering</strong> background, 
-                        I approach development with logic and precision. I love solving real-world problems and learning new
-                        tools that make me a stronger developer.</p>
-                    <p class="lead">I’m open to <strong>junior roles</strong> and <strong>freelance projects</strong> 
-                        where I can contribute, grow, and keep building clean, responsive, and impactful web experiences.</p>
-
-                </div>
-                <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center">
-                    <img src="Images/photo_profil.jpg" alt="Roméo TCHAMOU" class="img-fluid w-50 rounded-circle">
-                </div>
-            </div>
+            <p class="lead">
+              Coming from a <strong>mathematics</strong> and
+              <strong>engineering</strong> background, I approach development with logic and
+              precision. I love solving real-world problems and learning new tools that make me a
+              stronger developer.
+            </p>
+            <p class="lead">
+              I’m open to <strong>junior roles</strong> and
+              <strong>freelance projects</strong> where I can contribute, grow, and keep building
+              clean, responsive, and impactful web experiences.
+            </p>
+          </div>
+          <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center">
+            <img
+              src="Images/photo_profil.jpg"
+              alt="Roméo TCHAMOU"
+              class="img-fluid w-50 rounded-circle"
+            />
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="container-xxl py-4 ps-5 pe-5">
-            <div class="row">
-                <div class="col-md-12 text-center">  
-                    <h2 class="py-3">Projects</h2>
-                    <p class="lead">Each project below reflects my commitment to quality, responsiveness, 
-                        and client-focused design.</p>
-                    <p class="lead">I take pride in delivering projects that not only meet but exceed client expectations.</p>
-                </div>
-            </div>
+      <div class="container-xxl py-4 ps-5 pe-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="py-3">Projects</h2>
+            <p class="lead">
+              Each project represents a step in my journey as a <strong>web developer</strong> —
+              applying what I’ve learned to build clean, responsive, and user-friendly interfaces.
+            </p>
+            <p class="lead">
+              Through these projects, I’ve strengthened my skills in front-end development,
+              problem-solving, and creating real-world web experiences.
+            </p>
+          </div>
         </div>
-        <div class="container-xxl ps-5 pe-5">
-            <div class="row align-items-center justify-content-center my-5">
-                <div class="col-12 col-lg-4 col-xxl-3">
-                    <div class="card p-4 my-4 border-2 border-primary">
-                        <div class="body text-center py-4">
-                            <img src="Images/rps.png" alt="Rock • Paper • Scissors" class="img-fluid mb-3">
-                            <h4 class="card-title display-6">Rock • Paper • Scissors</h4>
-                            <p class="card-subtitle lead">Game application</p>
-                            <p class="text-muted small">A responsive browser game built with vanilla JavaScript. 
-                                Focus on event handling, DOM manipulation, and clean UI design.</p>
-                            <a href="https://romeo-martial.github.io/rock_paper_scissors/" target="_blank" rel="noopener noreferrer" 
-                            class="btn btn-primary btn-lg mt-3">Go to the Website</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-xxl-3">
-                    <div class="card p-4 my-4 border-2 border-primary">
-                        <div class="body text-center py-4">
-                            <img src="Images/eas.png" alt="Etch a Sketch" class="img-fluid mb-3">
-                            <h4 class="card-title display-6">Etch a Sketch</h4>
-                            <p class="card-subtitle lead">Drawing application</p>
-                            <p class="text-muted small">An interactive drawing app built with HTML, CSS, and JavaScript.  
-                                It uses a dynamic grid system to handle color modes, resizing, and event-driven drawing 
-                                while keeping performance smooth.
-                            </p>
-                            <a href="https://romeo-martial.github.io/Etch_a_Sketch/" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-primary btn-lg mt-3">Go to the Website</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4 col-xxl-3">
-                    <div class="card p-4 my-4 border-2 border-primary">
-                        <div class="body text-center py-4">
-                            <img src="Images/UI_design_nzoloo.png" alt="NZOLO'O" class="img-fluid mb-3">
-                            <h4 class="card-title display-6">NZOLO'O</h4>
-                            <p class="card-subtitle lead">Full stack app to query African football data</p>
-                            <p class="text-muted small">A full-stack football data web app that lets users explore and rank 
-                                African players’ statistics. Built with JavaScript, Bootstrap, and Python, focusing 
-                                on API integration, responsive UI, and clear data visualization.</p>
+      </div>
+      <div class="container-xxl px-4">
+        <div class="row justify-content-center g-4 my-5">
+          <!-- Rock • Paper • Scissors -->
+          <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+            <div class="card h-100 w-100 border-2 border-primary d-flex flex-column">
+              <div class="p-3">
+                <img src="Images/rps.png" class="img-fluid rounded" alt="Rock • Paper • Scissors" />
+              </div>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Rock • Paper • Scissors</h5>
+                <p class="card-subtitle lead">Game application</p>
+                <p class="card-text text-muted small">
+                  A responsive browser game built with vanilla JavaScript. Focused on event
+                  handling, DOM manipulation, and clean UI design.
+                </p>
+                <div class="flex-grow-1"></div>
+                <a
+                  href="https://romeo-martial.github.io/rock_paper_scissors/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-lg mt-auto"
+                  >Go to the Website</a
+                >
+              </div>
+            </div>
+          </div>
 
-                            <a href="#" class="btn btn-primary btn-lg mt-3">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+          <!-- Etch a Sketch -->
+          <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+            <div class="card h-100 w-100 border-2 border-primary d-flex flex-column">
+              <div class="p-3">
+                <img src="Images/eas.png" class="img-fluid rounded" alt="Etch a Sketch" />
+              </div>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">Etch a Sketch</h5>
+                <p class="card-subtitle lead">Drawing application</p>
+                <p class="card-text text-muted small">
+                  An interactive drawing app built with HTML, CSS, and JavaScript. It uses a dynamic
+                  grid system to handle color modes, resizing, and event-driven drawing while
+                  keeping performance smooth.
+                </p>
+                <div class="flex-grow-1"></div>
+                <a
+                  href="https://romeo-martial.github.io/Etch_a_Sketch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-lg mt-auto"
+                  >Go to the Website</a
+                >
+              </div>
             </div>
+          </div>
+
+          <!-- NZOLO’O -->
+          <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+            <div class="card h-100 w-100 border-2 border-primary d-flex flex-column">
+              <div class="p-3">
+                <img src="Images/UI_design_nzoloo.png" class="img-fluid rounded" alt="NZOLO'O" />
+              </div>
+              <div class="card-body text-center d-flex flex-column">
+                <h5 class="card-title fw-bold">NZOLO’O</h5>
+                <p class="card-subtitle lead">Full stack app to query African football data</p>
+                <p class="card-text text-muted small">
+                  A full-stack football data web app that lets users explore and rank African
+                  players’ statistics. Built with JavaScript, Bootstrap, and Python, focusing on API
+                  integration, responsive UI, and clear data visualization.
+                </p>
+                <div class="flex-grow-1"></div>
+                <a href="#" class="btn btn-primary btn-lg mt-auto">... Still Building!</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CV Section -->
     <section id="cv" class="bg-light">
-        <div class="container-lg py-4">
-            <div class="text-center mb-5">
-                <h2 class="py-3">Curriculum Vitae</h2>
-                <p class="lead">Download my CV to learn more about my skills, experience, and education.</p>
-                <a href="/Documents/CV_Romeo_TCHAMOU.pdf" class="btn btn-primary btn-lg" download>Download CV</a>
-            </div>
-            <div class="d-lg-flex justify-content-center">
-                <div class="accordion col-lg-9" id="chapters">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading1">
-                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" 
-                            data-bs-target="#experience" aria-expanded="true" aria-controls="experience">
-                                Professional Experience
-                            </button>
-                        </h2>
-                        <div id="experience" class="accordion-collapse collapse show" 
-                            aria-labelledby="heading1" data-bs-parent="#chapters">
-                            <div class="accordion-body">
-                                <dl>
-                                    <dt>Septembre 2023 – Présent : Enseignant de mathématiques
-                                        chez ACADOMIA
-                                    </dt>
-                                    <dd>
-                                        <ul>
-                                            <li>Vérification de la bonne maîtrise du cours;</li>
-                                            <li>Accompagnement des élèves dans la résolution des exercices;</li>
-                                            <li>Accompagnement les élèves dans l’utilisation des logiciels de
-                                                suite Microsoft Office (Word, Excel, PowerPoint).</li>
-                                        </ul>
-                                    </dd>
-                                    <dt>Février 2018 – Août 2023 : Assistant logistique chez Compagnie
-                                            Camerounaise de l’Aluminium (ALUCAM)</dt>
-                                    <dd>Analyse de données (via MS Excel) et aide à la décision dans
-                                        le cadre du processus d’amélioration de la chaîne
-                                        d’approvisionnement</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading2">
-                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" 
-                            data-bs-target="#skills" aria-expanded="true" aria-controls="skills">
-                                Skills
-                            </button>
-                        </h2>
-                        <div id="skills" class="accordion-collapse collapse" 
-                        aria-labelledby="heading2" data-bs-parent="#chapters">
-                            <div class="accordion-body">
-                                <ul class="list-group list-group-horizontal g-5">
-                                    <li class="list-group-item flex-fill d-flex justify-content-between 
-                                        align-items-center">
-                                        HTML
-                                        <span class="badge text-bg-primary rounded-pill">14</span>
-                                    </li>
-                                    <li class="list-group-item flex-fill">CSS</li>
-                                    <li class="list-group-item flex-fill">Bootstrap</li>
-                                    <li class="list-group-item flex-fill">JavaScript</li>
-                                    <li class="list-group-item flex-fill">React</li>
-                                    <li class="list-group-item flex-fill">PostgreSQL</li>
-                                    <li class="list-group-item flex-fill">Python</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading3">
-                            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" 
-                            data-bs-target="#education" aria-expanded="true" aria-controls="education">
-                                Education
-                            </button>
-                        </h2>
-                        <div id="education" class="accordion-collapse collapse" 
-                            aria-labelledby="heading3" data-bs-parent="#chapters">
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>Janvier 2020 – Décembre 2021 : MicroMasters en « Statistics
-                                        and Data Sciences » (en ligne) - Massachusetts Institute of
-                                        Technology (MIT) – USA</li>
-                                    <li>Juin 2017 – Décembre 2019 : MicroMasters en “Data,
-                                        Economics and Development Policy” (en ligne) - Massachusetts
-                                        Institute of Technology (MIT) - USA</li>
-                                    <li>Septembre 2013 – Juin 2016 : Master d’ingénieur en Génie
-                                        Energétique : option Energie Renouvelable - Ecole Nationale
-                                        Supérieure des Travaux Publics (ENSTP) de Yaoundé-Cameroun</li>
-                                    <li> Octobre 2004 – Juillet 2012 : Licence de Mathématiques
-                                        Université de Yaoundé I – Cameroun</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container-lg py-4">
+        <div class="text-center mb-5">
+          <h2 class="py-3">Curriculum Vitae</h2>
+          <p class="lead">
+            Download my résumé to learn more about my background, skills, and education.
+          </p>
+          <a href="CV_Tchamou_Roméo.pdf" class="btn btn-primary btn-lg" download>Download CV</a>
         </div>
+
+        <div class="d-lg-flex justify-content-center">
+          <div class="accordion col-lg-9" id="chapters">
+            <!-- Career Objective -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading0">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#objective"
+                  aria-expanded="true"
+                  aria-controls="objective"
+                >
+                  Career Objective
+                </button>
+              </h2>
+              <div
+                id="objective"
+                class="accordion-collapse collapse show"
+                aria-labelledby="heading0"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <p>
+                    <strong>Junior Web Developer</strong> passionate about creating clean,
+                    user-friendly, and responsive web applications. I’m currently taking
+                    <strong>The Odin Project</strong> with a focus on <strong>React</strong>,
+                    continuously improving my front-end development skills. I bring a strong
+                    analytical background, a commitment to learning, and a results-driven mindset.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#experience"
+                  aria-expanded="false"
+                  aria-controls="experience"
+                >
+                  Professional Experience
+                </button>
+              </h2>
+              <div
+                id="experience"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading1"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <dl>
+                    <dt>
+                      September 2023 – Present: <strong>Mathematics Tutor</strong> — ACADOMIA
+                      (France)
+                    </dt>
+                    <dd>
+                      <ul>
+                        <li>
+                          Helped high school and college students master core mathematics concepts
+                          and problem-solving strategies.
+                        </li>
+                        <li>
+                          Developed structured lesson plans and personalized explanations to improve
+                          understanding and performance.
+                        </li>
+                        <li>
+                          Built communication and mentoring skills through one-on-one and group
+                          sessions.
+                        </li>
+                      </ul>
+                    </dd>
+
+                    <dt>
+                      February 2018 – August 2023: <strong>Logistics Assistant</strong> — ALUCAM
+                      (Cameroon Aluminium Company)
+                    </dt>
+                    <dd>
+                      <ul>
+                        <li>
+                          Analyzed operational data with Excel to improve decision-making in supply
+                          chain management.
+                        </li>
+                        <li>
+                          Contributed to process optimization and resource planning to increase
+                          workflow efficiency.
+                        </li>
+                        <li>
+                          Collaborated with multidisciplinary teams to ensure smooth operations and
+                          accurate reporting.
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#skills"
+                  aria-expanded="false"
+                  aria-controls="skills"
+                >
+                  Technical Skills
+                </button>
+              </h2>
+              <div
+                id="skills"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading2"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <h6 class="fw-bold text-primary">Frontend</h6>
+                      <ul>
+                        <li>HTML5, CSS3 (Flexbox, Grid), JavaScript (ES6+)</li>
+                        <li>Bootstrap 5, Sass, Responsive Design</li>
+                        <li>React (learning, components & state management)</li>
+                        <li>Accessibility (WCAG)</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h6 class="fw-bold text-primary">Backend & Tools</h6>
+                      <ul>
+                        <li>Python, PostgreSQL</li>
+                        <li>APIs, JSON, Fetch</li>
+                        <li>Git, GitHub, VS Code, Command Line</li>
+                        <li>Testing (basic), documentation, teamwork</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading3">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#education"
+                  aria-expanded="false"
+                  aria-controls="education"
+                >
+                  Education
+                </button>
+              </h2>
+              <div
+                id="education"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading3"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <strong>MicroMasters in Statistics and Data Science</strong> — Massachusetts
+                      Institute of Technology (MITx, Online) — Jan 2020 to Dec 2021
+                    </li>
+                    <li>
+                      <strong>MicroMasters in Data, Economics, and Development Policy</strong> —
+                      Massachusetts Institute of Technology (MITx, Online) — Jun 2017 to Dec 2019
+                    </li>
+                    <li>
+                      <strong>Engineering Master’s Degree in Renewable Energy</strong> — National
+                      Advanced School of Public Works (ENSTP), Yaoundé, Cameroon — Sep 2013 to Jun
+                      2016
+                    </li>
+                    <li>
+                      <strong>Bachelor’s Degree in Mathematics</strong> — University of Yaoundé I,
+                      Cameroon — Oct 2004 to Jul 2012
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading4">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#softskills"
+                  aria-expanded="false"
+                  aria-controls="softskills"
+                >
+                  Soft Skills
+                </button>
+              </h2>
+              <div
+                id="softskills"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading4"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>Strong problem-solving and analytical thinking</li>
+                    <li>Continuous learning and adaptability</li>
+                    <li>Clear and professional communication</li>
+                    <li>Autonomy and time management</li>
+                    <li>Collaborative mindset and attention to detail</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading5">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#languages"
+                  aria-expanded="false"
+                  aria-controls="languages"
+                >
+                  Languages
+                </button>
+              </h2>
+              <div
+                id="languages"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading5"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li><strong>French:</strong> Native</li>
+                    <li><strong>English:</strong> Fluent (professional working proficiency)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Links -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading6">
+                <button
+                  class="accordion-button fw-bold"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#links"
+                  aria-expanded="false"
+                  aria-controls="links"
+                >
+                  Online Presence
+                </button>
+              </h2>
+              <div
+                id="links"
+                class="accordion-collapse collapse"
+                aria-labelledby="heading6"
+                data-bs-parent="#chapters"
+              >
+                <div class="accordion-body">
+                  <ul class="mb-0">
+                    <li>
+                      <strong>Portfolio:</strong>
+                      <a
+                        href="https://romeo-martial.github.io/Portfolio-Website/"
+                        target="_blank"
+                        rel="noopener"
+                        >romeo-martial.github.io</a
+                      >
+                    </li>
+                    <li>
+                      <strong>GitHub:</strong>
+                      <a href="https://github.com/romeo-martial" target="_blank" rel="noopener"
+                        >github.com/romeo-martial</a
+                      >
+                    </li>
+                    <li>
+                      <strong>LinkedIn:</strong>
+                      <a
+                        href="https://www.linkedin.com/in/romeo-tchamou/"
+                        target="_blank"
+                        rel="noopener"
+                        >linkedin.com/in/romeo-tchamou</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <div class="container-xxl py-4 ps-5 pe-5">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="py-3">Contact Me</h2>
-                    <p class="lead">Ready to start your project? I’d love to hear from you!</p>
-                    <p class="lead">Whether you have a question, want to discuss a project, or just want to say hi, 
-                        feel free to reach out.</p>
-                </div>
-            </div>
-            <div class="row justify-content-center my-5">
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label fw-bold">Name</label>
-                            <div class="input-group mb-4">
-                                <span class="input-group-text">
-                                    <i class="bi bi-person-fill"></i>
-                                </span>
-                                <input type="text" class="form-control" id="name" 
-                                placeholder="e.g. Mario Rossi" required>
-                            </div>
-                            
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label fw-bold">Email</label>
-                            <div class="input-group mb-4">
-                                <span class="input-group-text">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </span>
-                                <input type="email" class="form-control" id="email" 
-                                placeholder="e.g. mario@example.com">
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label fw-bold">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-                    </form>
-                </div>
-            </div>
+      <div class="container-xxl py-4 ps-5 pe-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="py-3">Contact Me</h2>
+            <p class="lead">
+              I’m currently seeking opportunities to grow as a <strong>Junior Web Developer</strong>
+              and contribute to real-world projects.
+            </p>
+            <p class="lead">
+              If you’re looking for a motivated developer who learns fast and writes clean,
+              maintainable code, I’d be happy to connect and discuss how I can add value to your
+              team.
+            </p>
+          </div>
         </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Name</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="e.g. Mario Rossi"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">Email</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill"></i>
+                  </span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="e.g. mario@example.com"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
-    crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
