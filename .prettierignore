@@ -1,0 +1,8 @@
+node_modules
+*.docx
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+package-lock.json
