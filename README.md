@@ -1,193 +1,107 @@
 # Portfolio Website - Roméo TCHAMOU
 
-A modern, responsive portfolio website showcasing my skills and projects as a Junior Frontend Developer.
+A responsive portfolio website built to present my profile, projects, skills, and contact information as a frontend developer.
 
-## 🌟 Live Demo
+## Live Demo
 
-Visit the live website: [Portfolio Website](https://romeo-martial.github.io/Portfolio-Website/)
+[Portfolio Website](https://romeo-martial.github.io/Portfolio-Website/)
 
-## 📋 About
+## About
 
-This is my personal portfolio website built to showcase my skills, projects, and professional experience as a junior web developer. The site features a clean, modern design with responsive layouts that work seamlessly across all devices.
+This is my personal portfolio website. I built it to showcase my work, highlight my skills, and give recruiters or potential clients a simple way to learn more about me.
 
-### Key Highlights
+The website includes:
 
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional design using Bootstrap 5
-- **Interactive Elements**: Smooth scrolling navigation and interactive project cards
-- **Accessible**: Built with accessibility best practices in mind
+* an About section
+* a Projects section
+* a CV section
+* a Contact section
 
-## 🚀 Technologies Used
+It is designed to be clean, responsive, and easy to navigate on desktop and mobile devices.
 
-- **HTML5**: Semantic markup with Open Graph meta tags for SEO
-- **CSS3**: Advanced styling with animations, transitions, aspect-ratio, and object-fit
-- **Bootstrap 5.3.7**: UI framework for responsive components and grid system
-- **Bootstrap Icons**: Icon library for visual elements
-- **JavaScript**: Interactive functionality (via Bootstrap components)
-- **Prettier**: Code formatting and consistency
+## Technologies Used
 
-## 🏗️ Project Structure
+* HTML5
+* CSS3
+* Bootstrap 5
+* Bootstrap Icons
+* JavaScript
+* Prettier
 
-```
+## Main Features
+
+* Responsive layout for desktop, tablet, and mobile
+* Clean and professional design
+* Project cards with links to live demos
+* Downloadable CV
+* Contact form
+* Smooth navigation between sections
+* Accessible and semantic HTML structure
+
+## Project Structure
+
+```text
 Portfolio-Website/
-├── index.html              # Main portfolio page
-├── accordion.html           # Additional page with accordion components
-├── package.json            # Node.js dependencies and scripts
-├── .prettierrc             # Prettier configuration
-├── .prettierignore         # Files to ignore during formatting
+├── index.html
+├── accordion.html
+├── package.json
+├── .prettierrc
+├── .prettierignore
 ├── .vscode/
-│   └── settings.json       # VS Code workspace settings
+│   └── settings.json
 ├── Images/
-│   ├── photo_profil.jpg    # Profile photo
-│   ├── rps.png            # Rock Paper Scissors project image
-│   ├── aes.png            # Etch a Sketch project image
-│   ├── UI_design_nzoloo.png # NZOLO'O project image
-│   └── ...                # Other project images
-├── CV_Tchamou_Roméo.pdf   # Downloadable CV
-└── README.md              # Project documentation
+├── CV_Tchamou_Roméo.pdf
+└── README.md
 ```
 
-## 🎯 Features
+## Highlighted Projects
 
-### Portfolio Sections
+Some of the projects presented on the website include:
 
-1. **About Me**: Professional background and skills overview
-2. **Projects**: Showcase of completed projects with live demos
-3. **CV/Resume**: Downloadable PDF and interactive accordion with experience
-4. **Contact**: Contact form for potential collaborations
+* Rock Paper Scissors
+* Etch a Sketch
+* NZOLO'O
+* CV Builder
+* Shopping Cart Application
 
-### Highlighted Projects
-
-- **Rock • Paper • Scissors**: Interactive browser game built with vanilla JavaScript
-- **Etch a Sketch**: Dynamic drawing application with grid system
-- **NZOLO'O**: Full-stack African football data web application
-
-### Technical Features
-
-- **SEO Optimized**: Open Graph meta tags for social media sharing
-- **Smooth Navigation**: Scroll-padding and anchor offsets for seamless section navigation
-- **Interactive UI**: Hover animations and smooth transitions on project cards
-- **Professional Styling**: Consistent image sizing with CSS aspect-ratio and object-fit
-- **Responsive Design**: Mobile-first navigation with Bootstrap grid system
-- **Accessibility**: Proper ARIA labels and semantic HTML structure
-- **Performance**: Optimized images and efficient CSS animations
-- **User Experience**: Interactive accordion for CV sections and contact form validation
-
-## 🛠️ Development Setup
+## Getting Started
 
 ### Prerequisites
 
-- Node.js (for development tools)
-- A modern web browser
-- Code editor (VS Code recommended)
+* Node.js
+* A modern web browser
 
 ### Installation
 
-1. **Clone the repository**
+```bash
+git clone https://github.com/Romeo-Martial/Portfolio-Website.git
+cd Portfolio-Website
+npm install
+```
 
-   ```bash
-   git clone https://github.com/Romeo-Martial/Portfolio-Website.git
-   cd Portfolio-Website
-   ```
+### Run the project
 
-2. **Install dependencies**
+Open `index.html` in your browser, or use a live server extension in your code editor.
 
-   ```bash
-   npm install
-   ```
-
-3. **Open in browser**
-   - Simply open `index.html` in your web browser
-   - Or use a live server extension in VS Code
-
-### Development Commands
+### Formatting commands
 
 ```bash
-# Format all files with Prettier
 npm run format
-
-# Check if files need formatting
 npm run format:check
 ```
 
-## 🎨 Customization
+## Deployment
 
-### Colors and Styling
+This website is deployed with GitHub Pages.
 
-The website uses Bootstrap's utility classes enhanced with modern CSS techniques:
-
-- **Smooth Navigation**: `scroll-padding-top` and `scroll-margin-top` for anchor links
-- **Responsive Images**: `aspect-ratio: 16/9` and `object-fit: cover` for consistent project cards
-- **Interactive Animations**: CSS transitions and transforms for hover effects
-- **Professional Polish**: Custom styling defined in the `<style>` section of `index.html`
-
-### Adding Projects
-
-To add new projects:
-
-1. Add project images to the `Images/` folder
-2. Create a new card in the Projects section following the existing structure
-3. Update the project information and links
-
-### Prettier Configuration
-
-Code formatting is handled by Prettier with the following settings:
-
-- 2-space indentation
-- Semicolons enabled
-- Double quotes for strings
-- 100 character line width
-- HTML whitespace sensitivity: CSS
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🚀 Deployment
-
-The website is deployed using GitHub Pages. To deploy your own version:
-
-1. Fork or clone this repository
-2. Enable GitHub Pages in repository settings
-3. Select the main branch as the source
-4. Your site will be available at `https://yourusername.github.io/Portfolio-Website`
-
-## 📄 License
-
-This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
+## Author
 
 **Roméo TCHAMOU**
 
-- Junior Frontend Developer
-- Email: [tchamou_r@yaoo.fr](mailto:tchamou_r@yaoo.fr)
-- GitHub: [@Romeo-Martial](https://github.com/Romeo-Martial)
-- LinkedIn: [Roméo TCHAMOU](https://www.linkedin.com/in/rom%C3%A9o-tchamou-170077202/)
+* GitHub: [@Romeo-Martial](https://github.com/Romeo-Martial)
+* LinkedIn: [Roméo TCHAMOU](https://www.linkedin.com/in/rom%C3%A9o-tchamou-170077202/)
+* Email: [tchamou_r@yaoo.fr](mailto:tchamou_r@yaoo.fr)
 
-## 🤝 Contributing
+## Notes
 
-While this is a personal portfolio, feedback and suggestions are welcome! Feel free to:
-
-1. Open an issue for bug reports or feature suggestions
-2. Submit a pull request for improvements
-3. Star the repository if you find it useful
-
-## 📝 Changelog
-
-### Version 1.0.0 (Current)
-
-- Initial portfolio website release
-- Responsive design implementation
-- Project showcase integration
-- CV section with downloadable PDF
-- Contact form implementation
-- Prettier code formatting setup
-
----
-
-_Built with ❤️ using HTML, CSS, Bootstrap, and JavaScript_
+This project reflects my approach to frontend development: building interfaces that are clear, responsive, and well organized.
