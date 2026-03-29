@@ -12,31 +12,31 @@ This is my personal portfolio website. I built it to showcase my work, highlight
 
 The website includes:
 
-* an About section
-* a Projects section
-* a CV section
-* a Contact section
+- an About section
+- a Projects section
+- a CV section
+- a Contact section
 
 It is designed to be clean, responsive, and easy to navigate on desktop and mobile devices.
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* Bootstrap 5
-* Bootstrap Icons
-* JavaScript
-* Prettier
+- HTML5
+- CSS3
+- Bootstrap 5
+- Bootstrap Icons
+- JavaScript
+- Prettier
 
 ## Main Features
 
-* Responsive layout for desktop, tablet, and mobile
-* Clean and professional design
-* Project cards with links to live demos
-* Downloadable CV
-* Contact form
-* Smooth navigation between sections
-* Accessible and semantic HTML structure
+- Responsive layout for desktop, tablet, and mobile
+- Clean and professional design
+- Project cards with links to live demos
+- Downloadable CV
+- Contact form
+- Smooth navigation between sections
+- Accessible and semantic HTML structure
 
 ## Project Structure
 
@@ -58,18 +58,15 @@ Portfolio-Website/
 
 Some of the projects presented on the website include:
 
-* Rock Paper Scissors
-* Etch a Sketch
-* NZOLO'O
-* CV Builder
-* Shopping Cart Application
+- Shopping Cart Application
+- CV Builder
 
 ## Getting Started
 
 ### Prerequisites
 
-* Node.js
-* A modern web browser
+- Node.js
+- A modern web browser
 
 ### Installation
 
@@ -98,9 +95,9 @@ This website is deployed with GitHub Pages.
 
 **Roméo TCHAMOU**
 
-* GitHub: [@Romeo-Martial](https://github.com/Romeo-Martial)
-* LinkedIn: [Roméo TCHAMOU](https://www.linkedin.com/in/rom%C3%A9o-tchamou-170077202/)
-* Email: [tchamou_r@yaoo.fr](mailto:tchamou_r@yaoo.fr)
+- GitHub: [@Romeo-Martial](https://github.com/Romeo-Martial)
+- LinkedIn: [Roméo TCHAMOU](https://www.linkedin.com/in/rom%C3%A9o-tchamou-170077202/)
+- Email: [tchamou_r@yaoo.fr](mailto:tchamou_r@yaoo.fr)
 
 ## Notes
 
